@@ -36,11 +36,15 @@ end
 
 def get_japanese_emoticon(library, emoticon)
   dictionary = load_library(library)
-  english = 
+  japanese = "Sorry, that emoticon was not found"
+  
   dictionary.each do |val0, val1, val2|
     dictionary[val0].each do |val1, val2|
       if dictionay[val0][val1].include?(emoticon)
-        
-  
+        japanese = dictionary[val0][:japanese]
+      end
+    end
+  end
+  japanese
 end
 
