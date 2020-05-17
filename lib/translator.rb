@@ -40,7 +40,7 @@ def get_japanese_emoticon(library, emoticon)
   
   dictionary.each do |val0, val1, val2|
     dictionary[val0].each do |val1, val2|
-      if dictionay[val0][val1].include?(emoticon)
+      if dictionary[val0][val1].include?(emoticon)
         japanese = dictionary[val0][:japanese]
       end
     end
